@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingTop="10dp"
+    android:paddingHorizontal="10dp"
+    android:paddingBottom="5dp"
+    android:orientation="vertical"
+    android:background="@drawable/ic_bg"
+    tools:context=".MainActivity">
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/edit_text_layout"
+        android:layout_width="match_parent"
+        android:layout_margin="5dp"
+        app:boxCornerRadiusBottomEnd="10dp"
+        app:boxCornerRadiusTopEnd="10dp"
+        app:boxCornerRadiusTopStart="10dp"
+        app:boxCornerRadiusBottomStart="10dp"
+        android:layout_marginTop="16dp"
+        android:layout_height="wrap_content">
+
+        <com.google.android.material.textfield.TextInputEditText
+            style="@style/Widget.MaterialComponents.TextInputLayout.FilledBox"
+            android:id="@+id/et_pin_code"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="number"
+            android:textSize="25sp"
+            android:imeOptions="actionDone"
+            android:maxLength="6"
+            android:hint="Enter Pin Code" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/btn_search"
+        android:layout_width="wrap_content"
+        android:text="SEARCH"
+        android:layout_gravity="center_horizontal"
+        android:layout_margin="5dp"
+        android:backgroundTint="@android:color/holo_orange_light"
+        android:layout_height="wrap_content"/>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/center_list_recycler_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="10dp"
+        tools:listitem="@layout/center_rv_item"/>
+
+
+</LinearLayout>

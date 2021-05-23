@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.material.card.MaterialCardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:cardBackgroundColor="@android:color/holo_red_light"
+    app:cardCornerRadius="16dp"
+    android:layout_margin="10dp">
+    
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/tv_center_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="3dp"
+            android:padding="3dp"
+            android:drawableStart="@drawable/ic_baseline_local_hospital_24"
+            android:drawablePadding="4dp"
+            android:text="Center Name"
+            android:textColor="@color/white"/>
+
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/tv_center_address"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="3dp"
+            android:padding="3dp"
+            android:drawableStart="@drawable/ic_baseline_location_on_24"
+            android:drawablePadding="4dp"
+            android:text="Center Address"
+            android:textColor="@color/white"/>
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/tv_center_timing"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="3dp"
+            android:padding="3dp"
+            android:drawableStart="@drawable/ic_baseline_timeline_24"
+            android:drawablePadding="4dp"
+            android:text="Timings"
+            android:textColor="@color/white"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+
+            <com.google.android.material.textview.MaterialTextView
+                android:id="@+id/tv_vaccine_name"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:drawableStart="@drawable/ic_vaccine"
+                android:drawablePadding="4dp"
+                android:layout_weight="1"
+                android:layout_margin="3dp"
+                android:padding="3dp"
+                android:text="Vaccine Name"
+                android:textColor="@color/white" />
+            <com.google.android.material.textview.MaterialTextView
+                android:id="@+id/tv_fee_type"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="3dp"
+                android:layout_weight="1"
+                android:gravity="center_horizontal"
+                android:padding="3dp"
+                android:text="Fee Type"
+                android:textColor="@color/white" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <com.google.android.material.textview.MaterialTextView
+                android:id="@+id/tv_age_limit"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:gravity="center_horizontal"
+                android:layout_height="wrap_content"
+                android:layout_margin="3dp"
+                android:padding="3dp"
+                android:text="Age Limit"
+                android:textColor="@color/white" />
+            <com.google.android.material.textview.MaterialTextView
+                android:id="@+id/tv_availability"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:gravity="center_horizontal"
+                android:layout_height="wrap_content"
+                android:layout_margin="3dp"
+                android:padding="3dp"
+                android:text="Availability"
+                android:textColor="@color/white" />
+
+        </LinearLayout>
+
+        
+    </LinearLayout>
+
+
+</com.google.android.material.card.MaterialCardView>
