@@ -3,6 +3,7 @@
     package="com.mohitsharda.whereismyvaccine">
 
     <uses-permission android:name="android.permission.INTERNET" />
+
     <application
         android:allowBackup="true"
         android:icon="@mipmap/ic_vaccine_launcher"
@@ -10,14 +11,19 @@
         android:roundIcon="@mipmap/ic_vaccine_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.WhereIsMyVaccine">
-        <activity android:name=".MainActivity"
-            >
+        <activity
+            android:name=".MainActivity"
+            android:hardwareAccelerated="true"
+            android:screenOrientation="portrait">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <meta-data
+            android:name="com.google.android.gms.ads.APPLICATION_ID"
+            android:value="ca-app-pub-8947367458785014~6930922351" />
     </application>
 
 </manifest>

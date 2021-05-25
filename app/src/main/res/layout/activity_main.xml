@@ -4,23 +4,33 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:paddingTop="10dp"
     android:paddingHorizontal="10dp"
     android:paddingBottom="5dp"
     android:orientation="vertical"
     android:background="@drawable/ic_bg"
     tools:context=".MainActivity">
 
+    <com.google.android.gms.ads.AdView xmlns:ads="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/ad_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        ads:adSize="BANNER"
+        ads:adUnitId="ca-app-pub-8947367458785014/1547853294">
+
+    </com.google.android.gms.ads.AdView>
+
     <com.google.android.material.textfield.TextInputLayout
         android:id="@+id/edit_text_layout"
         android:layout_width="match_parent"
-        android:layout_margin="5dp"
+        android:layout_height="wrap_content"
         app:boxCornerRadiusBottomEnd="10dp"
         app:boxCornerRadiusTopEnd="10dp"
         app:boxCornerRadiusTopStart="10dp"
         app:boxCornerRadiusBottomStart="10dp"
-        android:layout_marginTop="16dp"
-        android:layout_height="wrap_content">
+        android:layout_marginHorizontal="5dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="5dp">
 
         <com.google.android.material.textfield.TextInputEditText
             style="@style/Widget.MaterialComponents.TextInputLayout.FilledBox"
@@ -31,13 +41,13 @@
             android:textSize="25sp"
             android:imeOptions="actionDone"
             android:maxLength="6"
-            android:hint="Enter Pin Code" />
+            android:hint="@string/enter_pin_code" />
     </com.google.android.material.textfield.TextInputLayout>
 
     <com.google.android.material.button.MaterialButton
         android:id="@+id/btn_search"
         android:layout_width="wrap_content"
-        android:text="SEARCH"
+        android:text="@string/search"
         android:layout_gravity="center_horizontal"
         android:layout_margin="5dp"
         android:backgroundTint="@android:color/holo_orange_light"

@@ -11,6 +11,8 @@ import androidx.recyclerview.widget.LinearLayoutManager
 import com.android.volley.Request
 import com.android.volley.toolbox.JsonObjectRequest
 import com.android.volley.toolbox.Volley
+import com.google.android.gms.ads.AdRequest
+import com.google.android.gms.ads.MobileAds
 import com.mohitsharda.whereismyvaccine.databinding.ActivityMainBinding
 import org.json.JSONException
 import java.util.*
@@ -24,6 +26,11 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         binding = ActivityMainBinding.inflate(layoutInflater)
         setContentView(binding.root)
+
+
+        MobileAds.initialize(this@MainActivity) {}
+        val adRequest = AdRequest.Builder().build()
+        binding.adView.loadAd(adRequest)
 
         centerList = mutableListOf()
 
@@ -56,6 +63,7 @@ class MainActivity : AppCompatActivity() {
                 dpd.show()
             }
         }
+
     }
 
     private fun getAppointment(pinCode: String, date: String) {

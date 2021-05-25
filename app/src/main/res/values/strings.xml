@@ -1,3 +1,5 @@
 <resources>
     <string name="app_name">WhereIsMyVaccine</string>
+    <string name="search">SEARCH</string>
+    <string name="enter_pin_code">Enter Pin Code</string>
 </resources>
