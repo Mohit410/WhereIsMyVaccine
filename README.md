@@ -15,6 +15,9 @@
 <p>Thanks to <a href="https://apisetu.gov.in">APISetu</a> website for such a good API collection.</p>
 <p>https://cdn-api.co-vin.in/api/v2/appointment/sessions/public/calendarByPin?pincode=$pinCode&date=$date</p>
 
+<h1>How To Download</h1>
+<p><a href="https://github.com/Mohit410/WhereIsMyVaccine/blob/master/WIMV_v1.apk">Apk</a></p>
+
 <h1>Screenshots</h1>
 <p><a href="https://github.com/Mohit410/WhereIsMyVaccine/tree/master/WIMV%20Screenshots">Screenshots</a></p>
 
