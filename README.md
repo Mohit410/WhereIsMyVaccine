@@ -13,9 +13,19 @@
   
 <h1>API Used</h1>
 <p>Thanks to <a href="https://apisetu.gov.in">APISetu</a> website for such a good API collection.</p>
-```
-https://cdn-api.co-vin.in/api/v2/appointment/sessions/public/calendarByPin?pincode=$pinCode&date=$date
-```
+<p>https://cdn-api.co-vin.in/api/v2/appointment/sessions/public/calendarByPin?pincode=$pinCode&date=$date</p>
 
 <h1>Screenshots</h1>
-<p> ![appicon] (/WIMV\ Screenshots/Screenshot_20210523-211207_Samsung Experience Home.png)</p>
+<p><a href="https://github.com/Mohit410/WhereIsMyVaccine/tree/master/WIMV%20Screenshots">Screenshots</a></p>
+
+<h1>Contibuting To The Project</h1>
+<p>I will later upload the contribution file.</p>
+
+<h1>Thanks</h1>
+<ul>
+  <li><a href="https://developer.android.com">Android Developer Docs</a></li>
+  <li><a href="https://geeksforgeeks.org">GeeksForFeeks</a></li>
+  <li><a href="https://tutorials.eu">Tutorials.EU</a></li>
+  <li><a href="https://stackoverflow.com">StackOverflow</a>(deep down we all know)</li>
+</ul>
+  
